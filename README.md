@@ -15,6 +15,22 @@ git clone https://github.com/1adore1/deadlock-prediction.git
 ```
 pip install -r requirements.txt
 ```
+
+### Usage
+
+1. Preprocess the dataset by running:
+```
+python preprocess.py
+```
+2. rain the model with:
+```
+python train_model.py
+```
+3. Make predictions on your input picks:
+```
+python predict.py
+```
+
 ### Models Used
 
 * **Random Forest**
