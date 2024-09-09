@@ -1,7 +1,7 @@
-numpy==1.26.4
-pandas=2.2.2
-scikit-learn==1.5.0
-bs4==0.0.2
-requests==2.32.3
-seaborn==0.13.2
-catboost=1.2.7
+numpy
+pandas
+scikit-learn
+bs4
+requests
+seaborn
+catboost
