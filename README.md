@@ -2,8 +2,7 @@
 
 ### Overview
 
-The objective of this project is prediction the winning team in the new MOBA game Deadlock by Valve, based solely on the teams picks.
-The goal is to use machine learning models to analyze historical game data and create a predictive model that determines the probability of a team winning based on a combination of heroes or characters chosen by each team.
+The goal of this project is to predict the winning team in the new MOBA game Deadlock by Valve, based solely on the teams picks.
 
 ### Installation
 
