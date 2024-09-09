@@ -45,9 +45,4 @@ Dataset focused on:
 
 * **Team picks**: Heroes chosen by each team.
 * **Game results**: Outcome of the match (win/loss).
-
-### Future Work
-
-* **Incorporating additional features**: Additional factors like player skill level and team strategies could be explored.
-* **Model optimization**: Fine-tune hyperparameters to further improve model performance.
 ---
