@@ -41,7 +41,7 @@ python predict.py
 
 The dataset includes match history from Deadlock, that was parsed from [tracklock.gg](https://tracklock.gg).
 
-Dataset focused on:
+Dataset contains:
 
 * **Team picks**: Heroes chosen by each team.
 * **Game results**: Outcome of the match (win/loss).
