@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ```
 python preprocess.py
 ```
-2. rain the model with:
+2. Train the model with:
 ```
 python train_model.py
 ```
