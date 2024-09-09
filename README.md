@@ -10,6 +10,7 @@ The goal is to use machine learning models to analyze historical game data and c
 1. Clone the repository:
 ```
 git clone https://github.com/1adore1/deadlock-prediction.git
+cd deadlock-prediction
 ```
 2. Install required libraries:
 ```
