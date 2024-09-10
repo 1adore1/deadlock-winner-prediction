@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 ### Usage
 
-1. Preprocess the dataset by running:
+1. Preprocess the dataset by running (usually takes about 4 minutes):
 ```
 python preprocess.py
 ```
