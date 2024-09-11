@@ -1,4 +1,4 @@
-# **Deadlock Team Win Prediction**
+# **Deadlock Winner Prediction**
 
 ### Overview
 
