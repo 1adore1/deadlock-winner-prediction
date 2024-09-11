@@ -3,10 +3,7 @@ from sklearn.model_selection import train_test_split
 from preprocess import synergy, add_heroes_attributes
 from joblib import load
 
-df = pd.read_csv('data/preproc_matches.csv')
 scaler = load('data/joblib/scaler.joblib')
-X, y = df.drop('winner', axis=1), df['winner']
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=52)
 
 A_team = ['hero_1_A', 'hero_2_A', 'hero_3_A', 'hero_4_A', 'hero_5_A', 'hero_6_A']
 B_team = ['hero_1_B', 'hero_2_B', 'hero_3_B', 'hero_4_B', 'hero_5_B', 'hero_6_B']
@@ -16,10 +13,8 @@ heroes = heroes_stats_df['localized_name']
 heroes_A = [input('enter amber heroes: ').lower().strip() for _ in range(6)]
 heroes_B = [input('enter sapphire heroes: ').lower().strip() for _ in range(6)]
 
-# reading sample for input data and deleting unwanted columns
+# reading sample for input data
 test_match = pd.read_csv('data/blank_sample.csv')
-test_match.drop('matchid', axis=1, inplace=True)
-test_match.drop('winner', axis=1, inplace=True)
 
 for i in range(1, 7):
     test_match[f'hero_{i}_A'] = heroes_A[i - 1]
@@ -66,6 +61,6 @@ logreg = load('data/joblib/logistic_regression_model.joblib')
 test_match_scaled = scaler.transform(test_match)
 res = logreg.predict(test_match_scaled)
 if res == 1:
-    print(f'the sapphire flame: {logreg.predict_proba(test_match_scaled)[0][1]* 100:.1f}%')
+    print(f'the sapphire flame: {logreg.predict_proba(test_match_scaled)[0][1] * 100:.1f}%')
 else:
-    print(f'the amber hand: {logreg.predict_proba(test_match_scaled)[0][0]* 100:.1f}%')
+    print(f'the amber hand: {logreg.predict_proba(test_match_scaled)[0][0] * 100:.1f}%')

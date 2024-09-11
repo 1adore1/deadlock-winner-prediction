@@ -33,7 +33,7 @@ def add_heroes_attributes(df):
 
 if __name__ == '__main__':
     df = pd.read_csv('data/raw_matches.csv')
-
+    
     # replacing target values by numbers: 0 for The Amber Hand, 1 for The Sapphire Flame
     df['winner'] = df['winner'].apply(lambda x: 0 if x == 'The Amber Hand' else 1)
     for ch in ('A', 'B'):
