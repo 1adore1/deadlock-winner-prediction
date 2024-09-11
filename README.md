@@ -4,12 +4,14 @@
 
 The goal of this project is to predict the winning team in the new MOBA game Deadlock by Valve, based solely on the teams picks.
 
+**You can run entire development cycle using command line, or if you only need prediction, you can use a telegram bot: [@Deadlock_prediction_bot](https://t.me/Deadlock_predictor_bot)**
+
 ### Installation
 
 1. Clone the repository:
 ```
-git clone https://github.com/1adore1/deadlock-prediction.git
-cd deadlock-prediction
+git clone https://github.com/1adore1/deadlock-winner-prediction.git
+cd deadlock-winner-prediction
 ```
 2. Install required libraries:
 ```
@@ -18,18 +20,18 @@ pip install -r requirements.txt
 
 ### Usage
 
-1. Preprocess the dataset by running (usually takes about 4 minutes):
-```
-python preprocess.py
-```
-2. Train the model with:
-```
-python train_model.py
-```
-3. Make predictions on your input picks:
-```
-python predict.py
-```
+  1. Preprocess the dataset by running (takes about 1 minute for 10k matches):
+  ```
+  python preprocess.py
+  ```
+  2. Train the model with:
+  ```
+  python train_model.py
+  ```
+  3. Make predictions on your input picks:
+  ```
+  python predict.py
+  ```
 
 ### Models Used
 
