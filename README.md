@@ -4,8 +4,6 @@
 
 The goal of this project is to predict the winning team in the new MOBA game Deadlock by Valve, based solely on the teams picks.
 
-**You can run entire development cycle using command line, or if you only need prediction, you can use a telegram bot: [@Deadlock_prediction_bot](https://t.me/Deadlock_predictor_bot)**
-
 ### Installation
 
 1. Clone the repository:
